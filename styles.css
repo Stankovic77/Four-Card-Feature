@@ -1,0 +1,162 @@
+
+* {
+    --red: #EA5454;
+    --cyan: #44D3D2;
+    --orange: #FCAE4A;
+    --blue: #549EF2;
+    --slate: #4D4F62;
+    --font-family: Poppins;
+    --font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    font-family: var(--font-family);
+    color: var(--slate);
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+h1, h2 {
+    font-size: 2.25em;
+    letter-spacing: 0.015625em;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h1, h2, .opener {
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.8125em;
+    line-height: 1.4375em;
+    letter-spacing: 0.05625em;
+}
+
+.opener {
+    font-size: 0.9375em;
+    line-height: 1.5625em;
+    letter-spacing: 0.00625em;
+}
+
+footer {
+    padding: 3.4375em 0 0.9375em 0;
+}  
+
+footer a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+h2{
+    padding-top: 2em;
+}
+
+.opener{
+    margin: auto;
+    padding: 1.25em 2.5em 0 2.5em;
+    width: 33.75em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 21.875em);
+    grid-template-rows: repeat(2, 15.625em);
+    gap: 1.5625em;
+    padding-top: 3.75em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    border-color: var(--slate);
+}
+
+.content {
+    padding: 2.1875em;
+}
+
+.content p {
+    padding-top: 0.9375em;
+}
+
+.supervisor {
+    border-top: 4px solid;
+    border-color: var(--cyan);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.team {
+    border-top: 4px solid;
+    border-color: var(--red);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.karma {
+    border-top: 4px solid;
+    border-color: var(--orange);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.calculator {
+    border-top: 4px solid;
+    border-color: var(--blue);
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.content svg {
+    position: relative;
+    top: 20px;
+    left: 220px;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+
+@media screen and ( max-width: 1120px ) {
+    h2, h1 {
+        font-size: 1.5em;
+    }
+
+    .opener {
+        width: auto;
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .card {
+        width: 21.875em;
+    }
+  }
